@@ -8,6 +8,24 @@
   <title>Document</title>
 </head>
 <body>
+  <script src="./node_modules/tone/build/Tone.js"></script>
+  <!-- <button id="sound-button">Sound</button> -->
+  <div class="form-container">
+
+    <form id="create-instrument-form">
+      <h3>Create an Instrument</h3>
+      <input id='input-name' type="text" name="name" value="" placeholder="">
+      <br>
+
+      <select id="tunings" name="tunings">
+        <option value="1">Equal</option>
+      </select>
+
+   
+    <input id= 'create-button' type="submit" name="submit" value="Create New Instrument">
+  </form>
+  </div>
+
   <div id="instrument-container"></div>
 </body>
 </html>
