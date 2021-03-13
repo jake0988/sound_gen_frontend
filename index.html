@@ -4,10 +4,31 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script type="text/javascript" src="index.js"></script>
+  <script type="text/javascript" src="src/app.js"></script>
+  <script type="text/javascript" src="src/instrument.js"></script>
+  <script type="text/javascript" src="src/index.js"></script>
   <title>Document</title>
 </head>
 <body>
+  <script src="./node_modules/tone/build/Tone.js"></script>
+  <ul id="sounds-list"></ul>
+  <!-- <button id="sound-button">Sound</button> -->
+  <div class="form-container">
+
+    <form id="create-instrument-form">
+      <h3>Create an Instrument</h3>
+      <input id='input-name' type="text" name="name" value="" placeholder="">
+      <br>
+
+      <select id="tunings" name="tunings">
+        <option value="1">Equal</option>
+      </select>
+
+   
+    <input id= 'create-button' type="submit" name="submit" value="Create New Instrument">
+  </form>
+  </div>
+
   <div id="instrument-container"></div>
 </body>
 </html>
